@@ -8,13 +8,13 @@ test.describe('home main page check', () => {
     herokMain = new HerokMaim(page);
     await herokMain.openHerokMaim();
   });
-  test('visible elements', async () => {
+  test('Проверяем видимость элементов', async () => {
     await herokMain.checkElemVisible();
   });
-  test('presence of text', async () => {
+  test('Проверяем текст элементов', async () => {
     await herokMain.checkElemText();
   });
-  test('href attribut', async () => {
+  test('Наличие href attribut', async () => {
     await herokMain.checkLinkAttribute();
   });
 });

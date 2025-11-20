@@ -8,10 +8,10 @@ test.describe('add and remove Elements', () => {
     checkBoxPage = new Checkboxes(page);
     await checkBoxPage.goto();
   });
-  test('checkbox 1', async () => {
+  test('Проверка первого чекбоса', async () => {
     await checkBoxPage.checkBox1();
   });
-  test('checkbox 2', async () => {
+  test('проверка второго чекбокса', async () => {
     await checkBoxPage.checkBox2();
   });
 });

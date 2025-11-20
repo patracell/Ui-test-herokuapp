@@ -3,13 +3,13 @@ import { AddRemoveElements } from '../models/AddRemoveElements';
 
 let addRemove: AddRemoveElements;
 
-test.describe('add and remove Elements', () => {
+test.describe('Добавление и удаление элемента', () => {
   test.beforeEach(async ({ page }) => {
     addRemove = new AddRemoveElements(page);
     await addRemove.goto();
   });
 
-  test('add 5 elems and delete 3 ', async () => {
+  test('Добавляем 5 элементов удаляем 3, проверяем', async () => {
     await addRemove.addElem(5);
     const countAfterAdd = await addRemove.getCountOfElements();
     expect(countAfterAdd).toBe(5);

@@ -9,7 +9,7 @@ test.describe('Проверка Input', () => {
     await inputPage.goto();
   });
   test('ввод числового значения', async () => {
-    const testValue = '22';
+    const testValue = '27';
     await inputPage.fillInput(testValue);
     const value = await inputPage.inputValue();
     expect(value).toBe(testValue);

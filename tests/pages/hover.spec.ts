@@ -8,7 +8,7 @@ test.describe('hover check', () => {
     hoverPage = new HoverPage(page);
     await hoverPage.goto();
   });
-  test('проверяем что скрыт, наводим, проверяем что виден', async () => {
+  test('проверяем что скрыт hover, наводим, проверяем что виден', async () => {
     const count = await hoverPage.getFiguresCount();
     for (let i = 0; i < count; i++) {
       await hoverPage.verifyCaptionHidden(i);

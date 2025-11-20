@@ -8,13 +8,13 @@ test.describe('Drop Down Test', () => {
     dropPage = new Dropdown(page);
     await dropPage.gotoDropDown();
   });
-  test('Dropdown choice test', async () => {
+  test('Выбираем Dropdown', async () => {
     await dropPage.choiceOfOptions();
   });
-  test('Dropdown option 1', async () => {
+  test('Выбираем первый Dpordown и проверяем', async () => {
     await dropPage.choiceOption1();
   });
-  test('Dropdown option 2', async () => {
+  test('Выбираем второй Dpordown и проверяем', async () => {
     await dropPage.choiceOption2();
   });
 });
