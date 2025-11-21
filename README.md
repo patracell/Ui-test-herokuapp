@@ -1,6 +1,6 @@
 # Ui_test_herokuapp Playwright(ts/js)
 
-Автоматизации web-сайта https://the-internet.herokuapp.com .
+Авто тестирование web-сайта https://the-internet.herokuapp.com 
 
 Тестировались элементы :
 
